@@ -169,7 +169,7 @@ app.get("/protected", verifyToken, (req, res) => {
 });
 
 // [Route Integration]
-app.use("/blogs", blogRoutes);
+app.use("/posts", blogRoutes);
 app.use("/users", userRoutes);
 
 // Start Server
