@@ -9,7 +9,7 @@ const router = express.Router();
 router.post('/addBlog', verify, isLoggedIn, blogController.addBlog);
 
 // Retrieve all blogs
-router.get('/getBlogs', verify, blogController.getAllBlogs);
+router.get('/getBlogs', blogController.getAllBlogs);
 
 // Retrieve a blog by ID
 router.get('/getBlog/:blogId', blogController.getBlogById);
