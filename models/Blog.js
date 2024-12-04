@@ -19,10 +19,14 @@ const blogSchema = new mongoose.Schema({
         required: [true, 'Blog author is required.']
     },
     creationdate: {
-        type: Number,
+        type: String,
         required: [true, 'Blog creation date is required.'],
-        min: [1888, 'Year must be after the first known blog release.']
     },
+    // creationdate: {
+    //     type: Number,
+    //     required: [true, 'Blog creation date is required.'],
+    //     min: [1888, 'Year must be after the first known blog release.']
+    // },
     comments: [
         {
             userId: {
